@@ -7,13 +7,18 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    width: 100%;
+    justify-content: space-between;
 }   
 
-.childdiv {
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    max-width: 100%;
-    padding: 15px;
+.container > div:nth-child(17n + 1) {
+  width: 100%;
+  border: 0;
+  height: 0;
 }
+
+.childdiv {
+    border: 1px solid black;
+    width: 6%;
+    aspect-ratio: 1 / 1;
+}   
